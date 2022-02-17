@@ -8,6 +8,10 @@ import org.junit.Test
 
 class GameTest {
 
+    @Rule
+    @JvmField
+    val rule = InstantTaskExecutorRule()
+
     private lateinit var game: Game
     private var player: Player? = null
     private var anotherPlayer: Player? = null
@@ -147,10 +151,6 @@ class GameTest {
         val hasGameEnded = game.hasGameEnded()
         assertTrue(hasGameEnded)
     }
-
-    @Rule
-    @JvmField
-    val rule = InstantTaskExecutorRule()
 
     @Test
     fun endGameIfHasThreeSameVerticalCells() {

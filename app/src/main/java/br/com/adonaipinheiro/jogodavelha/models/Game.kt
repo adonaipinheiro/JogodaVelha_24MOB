@@ -14,10 +14,10 @@ class Game(playerOne: String, playerTwo: String) {
 
     companion object {
         private val TAG = Game::class.java.simpleName
-        private val BOARD_SIZE = 3
+        private const val BOARD_SIZE = 3
     }
 
-    val isBoardFull: Boolean
+    private val isBoardFull: Boolean
         get() {
             for (row in cells)
                 for (cell in row)
@@ -93,7 +93,8 @@ class Game(playerOne: String, playerTwo: String) {
 
     fun hasGameEnded(): Boolean {
         if (hasThreeSameHorizontalCells() ||
-            hasThreeSameVerticalCells() || hasThreeSameDiagonalCells()) {
+            hasThreeSameVerticalCells() || hasThreeSameDiagonalCells()
+        ) {
             winner.value = currentPlayer
             return true
         }

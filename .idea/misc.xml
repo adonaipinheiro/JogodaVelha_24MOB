@@ -12,7 +12,10 @@
         <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/drawable/cell_21.xml" value="0.36574074074074076" />
         <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/drawable/cell_22.xml" value="0.36574074074074076" />
         <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/drawable/cell_oo.xml" value="0.36574074074074076" />
+        <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/layout/activity_game.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/layout/game_begin_dialog.xml" value="0.371875" />
+        <entry key="..\:/Users/Computador/Documents/Github/CursoAndroid/JogodaVelha/app/src/main/res/layout/game_end_dialog.xml" value="0.20885416666666667" />
       </map>
     </option>
   </component>

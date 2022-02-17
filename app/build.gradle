@@ -1,10 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
     compileSdk 32
+
+    dataBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "br.com.adonaipinheiro.jogodavelha"
@@ -35,15 +40,17 @@ dependencies {
     // Biblioteca Assistente para outras dependências
     //incluindo regras de teste do JUnit que podem ser usadas com o LiveData.
     testImplementation "androidx.arch.core:core-testing:2.1.0"
+
     //Biblioteca AAC
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
     //Componentes da biblioteca de design
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
     //Biblioteca para teste de interface
     androidTestImplementation("com.schibsted.spain:barista:2.9.0") {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
